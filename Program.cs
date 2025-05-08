@@ -4,10 +4,6 @@
 //Console.WriteLine("Hello, World!");
 
 
-//変数の宣言
-//using System.Reflection.Metadata.Ecma335;
-using System.Linq;
-
 
 ///XMLドキュメントコメント
 ///プログラムには無視されるが、ドキュメント生成やツールチップに使われる特別なコメント
@@ -16,57 +12,112 @@ using System.Linq;
 ///XML形式でドキュメントファイル（.xml）として出力可能（→API仕様書として使える
 
 
-int money;      // 所持金
-string name;    // 所持金
-
-money = 5000;
-name = "きたむら";
-
-Console.WriteLine(money);
-Console.WriteLine(name);
+// 練習問題3-5
+int a = 15;
+int b = 2;
+float answer = (float)a / b;
+Console.WriteLine(answer);
 
 
-//int sum = 0;
+// 後置インクリメント演算子
+//今の値を使ってから、あとで1増やす
+int c = 2;
+Console.WriteLine(c++);  // 出力：2（使ってから増える）
+Console.WriteLine(c);    // 出力：3（1増えてる）
 
-//sum = 1 + 2 + 3 + 4 + 5;
-//Console.WriteLine(sum);
+// 節目の表示
+line();
 
-// for文
-//int sum = 0;
+// 練習問題3-6
+int d = 10;
+for (int i = 1; i <= 2; i++)
+{
+    d--;
+}
+Console.WriteLine(d);
 
-//for (int i = 1; i <= 5; i++)
-//{
-//    sum += i;
-//}
-//Console.WriteLine(sum);
+d /= 4;
+Console.WriteLine(d);
 
-//int i = 1;
-//while (i <= 5)
-//{
-//    sum += i;
-//    i++;
-//}
-//Console.WriteLine(sum);
+// 節目の表示
+line();
+
+int playerPosX = 10;
+int enemyPosX = 10;
+if (playerPosX == enemyPosX)
+{
+    Console.WriteLine("敵と遭遇");
+}
+
+// 節目の表示
+line();
+
+// 練習問題3-7
+int num = 10;
+if (num >= 3)
+{
+    Console.WriteLine("勝ち");
+}
+
+// 節目の表示
+line();
+
+int player1PosX = 2;
+int player2PosX = 6;
+if (player1PosX == 2)
+{
+    if (player2PosX == 6)
+    {
+        Console.WriteLine("仕掛け解除");
+    }
+}
+
+// 節目の表示
+line();
+
+//int player1PosX = 2;
+//int player2PosX = 6;
+if (player1PosX == 2 && player2PosX == 6)
+{
+    Console.WriteLine("仕掛け解除");
+}
 
 
-//int[] numbers = { 1, 2, 3, 4, 5, 6 };
-////int sum = 0;
-//foreach (int num in numbers)
-//{
-//    sum += num;
-//}
-//Console.WriteLine("合計は: " + sum);
+// 節目の表示
+line();
 
-int sum1 = 30 % 7;
-Console.WriteLine(sum1);
-
-
+// 練習問題3-8
+//int player1PosX = 2;
+//int player2PosX = 6;
+if (player1PosX == 1 || player2PosX == 4)
+{
+    Console.WriteLine("仕掛け解除");
+}
 
 
-//int sum = Enumerable.Range(1, 5).Sum();
-//Console.WriteLine("合計は: " + sum);
+// 節目の表示
+line();
+
+// 練習問題3-9
+if ((player1PosX == 2 && player2PosX == 6) || (player1PosX == 6 && player2PosX == 2))
+{
+    Console.WriteLine("仕掛け解除");
+}
 
 
-int n = 5;
-int sum = n * (n + 1) / 2;
-Console.WriteLine("合計は: " + sum);
+
+
+
+
+// 節目の表示
+static void line()
+{
+    Console.WriteLine("----------------------"); ;
+}
+
+
+
+
+
+
+
