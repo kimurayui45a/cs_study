@@ -17,6 +17,9 @@ using CsStudy;
 
 
 // 基本問題のクラス
-SuperBasic.Run();
+//SuperBasic.Run();
+
+// 基本問題のクラス
+SuperBasic2.Run();
 
 

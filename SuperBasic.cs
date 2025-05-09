@@ -32,7 +32,7 @@ namespace CsStudy
             Console.WriteLine(c);    // 出力：3（1増えてる）
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-6
             Console.WriteLine("練習問題3-6");
@@ -47,7 +47,7 @@ namespace CsStudy
             Console.WriteLine(d);
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             int playerPosX = 10;
             int enemyPosX = 10;
@@ -57,7 +57,7 @@ namespace CsStudy
             }
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-7
             Console.WriteLine("練習問題3-7");
@@ -68,7 +68,7 @@ namespace CsStudy
             }
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             int player1PosX = 2;
             int player2PosX = 6;
@@ -81,7 +81,7 @@ namespace CsStudy
             }
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             //int player1PosX = 2;
             //int player2PosX = 6;
@@ -92,7 +92,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-8
             //int player1PosX = 2;
@@ -105,7 +105,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-9
             Console.WriteLine("練習問題3-9");
@@ -116,7 +116,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             int playerPosY = 2;
             if (playerPosY == 0)
@@ -130,7 +130,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-10
             Console.WriteLine("練習問題3-10");
@@ -146,7 +146,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-11
             Console.WriteLine("練習問題3-11");
@@ -173,7 +173,7 @@ namespace CsStudy
             Console.WriteLine("HP=" + hp);
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             switch (mapType)
             {
@@ -194,7 +194,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-12
             Console.WriteLine("練習問題3-12");
@@ -205,7 +205,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
 
             for (int i = 1; i < 4; i++)
@@ -216,7 +216,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-13
             //int e = 2;
@@ -233,7 +233,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-14
             //for (int i = 0; i < 6; i++)
@@ -251,7 +251,7 @@ namespace CsStudy
             }
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             for (int i = 3; i > 0; i--) 
             {
@@ -261,7 +261,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-15
             Console.WriteLine("練習問題3-15");
@@ -273,7 +273,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             int playerPosA = 5;
             int missilePosX = 15;
@@ -288,7 +288,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-16
             Console.WriteLine("練習問題3-16");
@@ -303,7 +303,7 @@ namespace CsStudy
 
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             int playerPosB = 5;
             int missilePosY = 15;
@@ -320,7 +320,7 @@ namespace CsStudy
             Console.WriteLine("HIT");
 
             // 節目の表示
-            Line();
+            LineBorder.Line();
 
             // 練習問題3-17
             Console.WriteLine("練習問題3-17");
@@ -341,12 +341,6 @@ namespace CsStudy
 
         }
 
-
-        // 節目の表示
-        private static void Line()
-        {
-            Console.WriteLine("----------------------"); 
-        }
 
     }
 }
