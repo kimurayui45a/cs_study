@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CsStudy.SampleRPG
 {
-    internal class Enemy
+    internal class Enemy(int hp = 100)
     {
-        public int hp;
+        public int Hp { get; private set; } = hp;
+
 
         public void Attack()
         {
