@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsStudy
 {
+    // internal（アクセス修飾子）：このアセンブリ（＝プロジェクト）内では自由に使えるけど、他のプロジェクトからは使えない
     internal class LineBorder
     {
 
