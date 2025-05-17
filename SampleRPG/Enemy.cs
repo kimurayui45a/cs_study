@@ -6,19 +6,9 @@ using System.Threading.Tasks;
 
 namespace CsStudy.SampleRPG
 {
-    internal class Enemy(int hp = 100)
+    // 継承して使用するクラス（abstractによりインスタンスは作成できない）
+    internal abstract class Enemy
     {
-        public int Hp { get; private set; } = hp;
-
-
-        public void Attack()
-        {
-            Console.WriteLine("敵の攻撃！");
-        }
-
-        public void Defense()
-        {
-            Console.WriteLine("逃げられた！");
-        }
+        public abstract void Move();
     }
 }

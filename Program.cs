@@ -12,6 +12,7 @@ using CsStudy.SampleRPG;
 
 // KartGameをインポート：【継承（P147 ～ P168）】
 using CsStudy.KartGame;
+using System.Drawing;
 
 ///XMLドキュメントコメント
 ///プログラムには無視されるが、ドキュメント生成やツールチップに使われる特別なコメント
@@ -26,7 +27,8 @@ using CsStudy.KartGame;
 // 基本問題のクラス(～P110)
 //SuperBasic2.Run();
 
-
+// 基本問題のクラス
+//SuperBasic3.Run();
 
 //---------------------------------------------------------------------------
 
@@ -105,18 +107,62 @@ using CsStudy.KartGame;
 
 
 // 親クラス（Kart）の配列を通して、実際の子クラスのメソッドを呼び出す
-// 「親クラス型の配列を作成
+
+
+// 親クラス型の配列を作成し、子クラス（インスタンス）を代入、パターン1
 //Kart[] karts = new Kart[2];
-Kart[] karts = [new SkyKart(), new TurboKart()];
-
-
-// 派生クラスのインスタンスを基本クラスの変数に代入
 //karts[0] = new SkyKart();
 //karts[1] = new TurboKart();
 
-foreach (Kart k in karts) 
-{
-    // 各子クラスのHornを呼び出す（ポリモーフィズム）
-    k.Horn();
-}
+// 親クラス型の配列を作成し、子クラス（インスタンス）を代入、パターン2
+// Kart[] karts = [new SkyKart(), new TurboKart()];
 
+
+// 作成した配列から各インスタンスの該当メソッドを呼び出す
+//foreach (Kart k in karts) 
+//{
+//    // 各子クラスのHornを呼び出す（ポリモーフィズム）
+//    k.Horn();
+//}
+
+//---------------------------------------------------------------------------
+
+
+// ストラクト
+StructBasic a = new StructBasic { X = 1, Y = 2 };
+StructBasic b = a; // aをコピー
+
+b.X = 100;
+
+Console.WriteLine($"a.X: {a.X}");
+Console.WriteLine($"b.X: {b.X}");
+
+
+// 節目の表示
+LineBorder.Line();
+// クラス
+ClassBasic c = new ClassBasic { X = 1, Y = 2 };
+ClassBasic d = c; // cの情報を共有
+
+d.X = 100;
+
+Console.WriteLine($"c.X: {c.X}");
+Console.WriteLine($"d.X: {d.X}");
+
+
+// 節目の表示
+LineBorder.Line();
+// デリゲート
+DelegateBasic db = new DelegateBasic();
+// デリゲートの取得
+Cal method = db.GetDelegate();
+
+int result = method(3, 4);
+Console.WriteLine($"結果: {result}");
+
+
+// 節目の表示
+LineBorder.Line();
+var obj = new DelegateBasic2();
+int result2 = obj.Method3(2, 10);
+Console.WriteLine($"戻ってきた値（最後の関数の戻り値）: {result2}");
