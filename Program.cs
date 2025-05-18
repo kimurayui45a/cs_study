@@ -30,6 +30,19 @@ using System.Drawing;
 // 基本問題のクラス
 //SuperBasic3.Run();
 
+int money = 1500;
+money -= 1000;
+
+Console.WriteLine("デバッグ1");
+
+money += 2000;
+
+Console.WriteLine("デバッグ2");
+
+money -= 100;
+
+Console.WriteLine("デバッグ3");
+
 //---------------------------------------------------------------------------
 
 // 【カプセル化（P112 ～ P146）】
@@ -129,40 +142,40 @@ using System.Drawing;
 
 
 // ストラクト
-StructBasic a = new StructBasic { X = 1, Y = 2 };
-StructBasic b = a; // aをコピー
+//StructBasic a = new StructBasic { X = 1, Y = 2 };
+//StructBasic b = a; // aをコピー
 
-b.X = 100;
+//b.X = 100;
 
-Console.WriteLine($"a.X: {a.X}");
-Console.WriteLine($"b.X: {b.X}");
-
-
-// 節目の表示
-LineBorder.Line();
-// クラス
-ClassBasic c = new ClassBasic { X = 1, Y = 2 };
-ClassBasic d = c; // cの情報を共有
-
-d.X = 100;
-
-Console.WriteLine($"c.X: {c.X}");
-Console.WriteLine($"d.X: {d.X}");
+//Console.WriteLine($"a.X: {a.X}");
+//Console.WriteLine($"b.X: {b.X}");
 
 
-// 節目の表示
-LineBorder.Line();
-// デリゲート
-DelegateBasic db = new DelegateBasic();
-// デリゲートの取得
-Cal method = db.GetDelegate();
+//// 節目の表示
+//LineBorder.Line();
+//// クラス
+//ClassBasic c = new ClassBasic { X = 1, Y = 2 };
+//ClassBasic d = c; // cの情報を共有
 
-int result = method(3, 4);
-Console.WriteLine($"結果: {result}");
+//d.X = 100;
+
+//Console.WriteLine($"c.X: {c.X}");
+//Console.WriteLine($"d.X: {d.X}");
 
 
-// 節目の表示
-LineBorder.Line();
-var obj = new DelegateBasic2();
-int result2 = obj.Method3(2, 10);
-Console.WriteLine($"戻ってきた値（最後の関数の戻り値）: {result2}");
+//// 節目の表示
+//LineBorder.Line();
+//// デリゲート
+//DelegateBasic db = new DelegateBasic();
+//// デリゲートの取得
+//Cal method = db.GetDelegate();
+
+//int result = method(3, 4);
+//Console.WriteLine($"結果: {result}");
+
+
+//// 節目の表示
+//LineBorder.Line();
+//var obj = new DelegateBasic2();
+//int result2 = obj.Method3(2, 10);
+//Console.WriteLine($"戻ってきた値（最後の関数の戻り値）: {result2}");
